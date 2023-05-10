@@ -4,7 +4,7 @@
 
 ## Overview
 
-A dive into Neumorphic design thoery focused on recreating the fundemental elements of the design. 
+A dive into Neumorphic design theory focused on recreating the fundemental elements of the design. 
 
 
 #### Technologies Used
