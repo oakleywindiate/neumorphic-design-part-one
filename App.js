@@ -11,16 +11,16 @@ import SearchBox from './components/SearchBox';
 import SettingsButton from './components/Settings';
 import Tabs from './components/Tabs';
 import ToggleSwitch from './components/ToggleSwitch';
-import InsetShadow from 'react-native-inset-shadow';
+import ViewWithInsetShadow from './components/ViewWithInsetShadow';
 
 export default function App() {
   return (
     <View style={styles.containerBackground}>
       <View style={styles.box}></View>
       <View style={styles.container}>
-      {/* <InsetShadow style={styles.shadow}> */}
+      <ViewWithInsetShadow shadowColor={"red"}>
         <SearchBox />
-      {/* </InsetShadow> */}
+      </ViewWithInsetShadow>
         <View style={styles.tabs}>
         {/* <InsetShadow> */}
           <Tabs />

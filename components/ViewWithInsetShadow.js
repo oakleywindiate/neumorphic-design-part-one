@@ -1,20 +1,10 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import InsetShadow from './InsetShadow';
+import InsetShadow from 'react-native-inset-shadow';
 
-const ViewWithInsetShadow = ({
-  children,
-  style,
-  shadowColor
-//   shadowRadius,
-//   shadowOffset,
-//   shadowOpacity,
-//   color,
-//   bottom = true,
-//   right = true,
-}) => (
-  <View style={{ height: 80 }}>
-    <InsetShadow>
+const ViewWithInsetShadow = ({children, ...props}) => (
+  <View style={{}}>
+    <InsetShadow {...props}>
         {children}
     </InsetShadow>
   </View>

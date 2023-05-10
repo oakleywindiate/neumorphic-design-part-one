@@ -19,18 +19,18 @@ const Tabs = () => {
   };
 
   return (
-    <ViewWithInsetShadow>
+    // <ViewWithInsetShadow>
         <View style={styles.buttonGroup}>
-            {/* <InsetShadow
+            <ViewWithInsetShadow
                 shadowColor={"red"}
                 shadowRadius={5}
                 bottom={false}
                 right={false}
-                > */}
+                >
                 <TouchableOpacity style={styles.button} onPress={handleReset}>
                 <Text style={styles.buttonText}>Tab 1</Text>
                 </TouchableOpacity>
-            {/* </InsetShadow> */}
+            </ViewWithInsetShadow>
                 <TouchableOpacity style={styles.button} onPress={handleReset}>
                 <Text style={styles.buttonText}>Tab 1</Text>
                 </TouchableOpacity>
@@ -38,7 +38,7 @@ const Tabs = () => {
                 <Text style={styles.buttonText}>Tab 1</Text>
                 </TouchableOpacity>
         </View>
-    </ViewWithInsetShadow>
+    // </ViewWithInsetShadow>
   );
 };
 
@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
     },
     shadow: {
-
     },
     button: {
         width: 100, 
